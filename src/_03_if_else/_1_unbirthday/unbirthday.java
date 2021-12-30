@@ -4,6 +4,7 @@ import java.util.Date;
 import javax.swing.JOptionPane;
 
 public class unbirthday {
+	@SuppressWarnings("deprecation")
 	public static void main(String[] args) {
 		String Bday = JOptionPane.showInputDialog("When is your birthday machine (mm/dd)!");
 		System.out.println(Bday);
@@ -15,7 +16,8 @@ public class unbirthday {
 		//System.out.println(Cake);
 		System.out.println(today.getMonth());
 		System.out.println(today.getDate());
-		String Pre=today.getMonth() + "/" + today.getDate();
+		String Pre= (today.getMonth() +1) + "/" + today.getDate();
+		System.out.println(Pre);
 		
 		if (Bday.equals(Pre)) {
 			JOptionPane.showMessageDialog(null, "Happy Birthday!");
