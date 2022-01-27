@@ -21,7 +21,7 @@ void draw() {
 //toppings
 image(pepperoni,155,155);
 pepperoni.resize(80,80);
-image(mushroom,250,250);
-mushroom.resize(150,155);
+image(mushroom,180,220);
+mushroom.resize(150,130);
 image(olive,230,155);
 }
