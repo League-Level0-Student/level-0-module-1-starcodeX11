@@ -27,9 +27,17 @@ public class TheRiddler {
 		
 		
 		// 6. Add some more riddles
-
+		 answer = JOptionPane.showInputDialog("What is made of water but if you put it into water it will die");
+		if(answer.equals("ice cube")) {
+			JOptionPane.showMessageDialog(null, "CORRECT");
+			score++; 
+			}
+			
+			else {
+				JOptionPane.showMessageDialog(null, "INCORRECT, THE ANSWER WAS AN ICE CUBE");
+		}
 		// 2. Make a pop up to show the score.
 		JOptionPane.showMessageDialog(null, "your score is " + score);
 	}
-}
 
+		}
